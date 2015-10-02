@@ -928,7 +928,7 @@ if(!function_exists('etheme_top_cart')) {
 
 			<div class="shopping-cart-widget a-right" <?php if(etheme_get_option('favicon_badge')) echo 'data-fav-badge="enable"' ?>>
 				<div class="cart-summ" data-items-count="<?php echo $woocommerce->cart->cart_contents_count; ?>">
-					<a href="<?php echo $woocommerce->cart->get_cart_url(); ?>"><?php _e('Cart', ETHEME_DOMAIN) ?> <span class="items"><?php echo $woocommerce->cart->cart_contents_count; ?> <?php echo ($woocommerce->cart->cart_contents_count != 1) ? __('items', ETHEME_DOMAIN) : __('item', ETHEME_DOMAIN) ; ?></span> <span class="for-label"><?php _e('for', ETHEME_DOMAIN) ?></span> <span class="price-summ"><?php echo $woocommerce->cart->get_cart_subtotal(); ?></span></a>
+					<a href="<?php echo $woocommerce->cart->get_cart_url(); ?>"><img src="../wp-content/themes/legenda/framework/dT6ao7obc-copy-90x90.png" alt="" style="width:20px;height:20px;"></a>
 				</div>
 			    <div class="cart-popup-container">
 				    <div class="cart-popup">

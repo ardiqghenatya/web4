@@ -82,7 +82,7 @@ class Walker_Nav_Menu extends Walker {
 		$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
 
 		$classes = empty( $item->classes ) ? array() : (array) $item->classes;
-		$classes[] = 'menu-item-' . $item->ID;
+		$classes[] = 'menu-item-fukin-' . $item->ID;
 
 		/**
 		 * Filter the CSS class(es) applied to a menu item's list item element.
@@ -225,7 +225,7 @@ function wp_nav_menu( $args = array() ) {
 	static $menu_id_slugs = array();
 
 	$defaults = array( 'menu' => '', 'container' => 'div', 'container_class' => '', 'container_id' => '', 'menu_class' => 'menu', 'menu_id' => '',
-	'echo' => true, 'fallback_cb' => 'wp_page_menu', 'before' => '', 'after' => '', 'link_before' => '', 'link_after' => '', 'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+	'echo' => true, 'fallback_cb' => 'wp_page_menu', 'before' => '', 'after' => '', 'link_before' => '', 'link_after' => '', 'items_wrap' => '<ul id="%1$s-ardiq" class="%2$s">%3$s</ul>',
 	'depth' => 0, 'walker' => '', 'theme_location' => '' );
 
 	$args = wp_parse_args( $args, $defaults );
@@ -318,7 +318,7 @@ function wp_nav_menu( $args = array() ) {
 		$allowed_tags = apply_filters( 'wp_nav_menu_container_allowedtags', array( 'div', 'nav' ) );
 		if ( in_array( $args->container, $allowed_tags ) ) {
 			$show_container = true;
-			$class = $args->container_class ? ' class="' . esc_attr( $args->container_class ) . '"' : ' class="menu-'. $menu->slug .'-container"';
+			$class = $args->container_class ? ' class="' . esc_attr( $args->container_class ) . '"' : ' class="menu-'. $menu->slug .'-container ardiqardiq"';
 			$id = $args->container_id ? ' id="' . esc_attr( $args->container_id ) . '"' : '';
 			$nav_menu .= '<'. $args->container . $id . $class . '>';
 		}

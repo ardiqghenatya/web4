@@ -43,8 +43,8 @@
 	<?php endif; ?>
 
 	<?php if(is_active_sidebar('footer9') || is_active_sidebar('footer10') || $fd): ?>
-		<div class="copyright copyright-<?php echo $ft; ?>">
-			<div class="container">
+		<div class="copyright copyright-<?php echo $ft; ?>" style="border-top:3px solid black">
+			<div class="container"style="border-top:0px solid transparent">
 				<div class="row-fluid">
 					<div class="span6">
 						<?php if(is_active_sidebar('footer9')): ?> 

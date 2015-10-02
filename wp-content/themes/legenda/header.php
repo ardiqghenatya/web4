@@ -76,8 +76,7 @@
 		<div class="fixed-header-area fixed-menu-type<?php etheme_option('menu_type'); ?> hidden-phone">
 			<div class="fixed-header">
 				<div class="container">
-					<div class="menu-wrapper">
-                        
+					<div class="menu-wrapper">                        
 					    <div class="menu-icon hidden-desktop"><i class="icon-reorder"></i></div>
 						<div class="logo-with-menu">
 							<?php etheme_logo(); ?>
@@ -223,8 +222,8 @@
 			</div>
 
 		</header>
-		<div class="main-nav visible-desktop">
-			<div class="double-border">
+		<div class="main-nav visible-desktop" style="border-top: 3px solid black; border-bottom: transparent;">
+			<div class="">
 				<div class="container">
 					<div class="menu-wrapper menu-type<?php etheme_option('menu_type'); ?>">
 						<div class="logo-with-menu">

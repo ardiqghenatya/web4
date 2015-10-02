@@ -4315,7 +4315,7 @@ input[type="submit"] i {
   color: #6f6f6f;
 }
 .shopping-cart-widget .cart-summ > a:before {
-  content: "\e61f";
+  content: "";
   font-size: 20px;
   line-height: 10px;
   font-family: "arrows";
